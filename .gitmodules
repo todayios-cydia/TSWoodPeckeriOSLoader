@@ -1,0 +1,3 @@
+[submodule "src/WoodPeckeriOS"]
+	path = src/WoodPeckeriOS
+	url = https://github.com/appwoodpecker/woodpecker-ios.git

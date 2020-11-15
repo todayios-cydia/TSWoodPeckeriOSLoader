@@ -1,0 +1,17 @@
+Package: com.todayios-cydia.woodpecker
+Name: TSWoodPeckeriOSLoader
+Version: 1.2.9
+Description: 使用WoodPeckeriOS动态库 调试三方程序, 动态库版本: 1.2.9
+Depiction: TSWoodPeckeriOSLoader 调试三方程序, 动态库版本: 1.2.9，动态库更新请替换 "/layout/Library/Application Support/TSWoodPeckeriOSLoader/WoodPeckeriOS.framework"
+Section: Tweaks
+Depends: firmware (>= 12.0), mobilesubstrate, AppList
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: manajay
+dev: 
+Homepage:https://todayios-cydia.github.io/cydia/
+Maintainer: manajay <me@todayios.com>
+Icon: file:///layout/Library/PreferenceLoader/Preferences/TSWoodPeckeriOSLoaderIcon@2x.png
+
