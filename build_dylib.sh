@@ -19,7 +19,7 @@ cp -f -r ${DYLIB_SOURCE_PATH} ./layout/Library/Application\ Support/TSWoodPecker
 echo "===================================="
 
 echo "##WARNING: resign WoodPeckeriOS.framework"
-# codesign -fs "Apple Development: ljduan2013@icloud.com (992QNX5ZG6)" ./layout/Library/Application\ Support/TSWoodPeckeriOSLoader/WoodPeckeriOS.framework
+# codesign -fs "Apple Development: Qianduan Da (4V52F2MX45)" ./layout/Library/Application\ Support/TSWoodPeckeriOSLoader/WoodPeckeriOS.framework
 echo "===================================="
 
 echo "Done."

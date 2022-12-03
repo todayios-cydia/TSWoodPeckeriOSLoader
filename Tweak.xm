@@ -6,9 +6,10 @@
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	NSDictionary *pref = [NSDictionary dictionaryWithContentsOfFile:@"/User/Library/Preferences/com.todayios-cydia.woodpecker.plist"];
+	
 	NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
-	NSDictionary *configuration = [pref objectForKey:@"com.todayios-cydia.woodpecker"];
-	NSArray *selectedApplications = [configuration objectForKey:@"selectedApplications"];
+	NSArray *selectedApplications = [pref objectForKey:@"selectedApplications"];
+
 	BOOL enabled = [selectedApplications containsObject:bundleIdentifier];
 	NSLog(@"WoodPecker selectedApplications:%@ contains %@", selectedApplications, bundleIdentifier);
 
