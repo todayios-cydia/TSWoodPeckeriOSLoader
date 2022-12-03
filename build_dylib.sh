@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 echo "Cleaning up..."
-rm -rf bin/ src/
+# rm -rf bin/ woodpecker-ios/
 
 echo "Updating submodules..."
 git submodule update --init --recursive
 echo "===================================="
 
-DYLIB_SOURCE_PATH="./src/WoodPeckeriOS/WoodPeckeriOS.framework"
+DYLIB_SOURCE_PATH="./woodpecker-ios/WoodPeckeriOS.xcframework/ios-arm64_armv7/WoodPeckeriOS.framework"
 
 echo "Copying dylib..."
 DYLIB_PATH="./layout/Library/Application Support/TSWoodPeckeriOSLoader/"

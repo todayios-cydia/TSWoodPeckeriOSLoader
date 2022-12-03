@@ -4,74 +4,39 @@
 <dict>
 	<key>entry</key>
 	<dict>
+		<key>bundle</key>
+		<string>AltList</string>
 		<key>cell</key>
-		<string>PSLinkCell</string>
-		<key>icon</key>
-		<string>TSWoodPeckeriOSLoaderIcon.png</string>
+		<string>PSLinkListCell</string>
+		<key>detail</key>
+		<string>ATLApplicationListMultiSelectionController</string>
+		<key>key</key>
+		<string>selectedApplications</string>
+		<key>defaults</key>
+		<string>com.todayios-cydia.woodpecker</string>
+		<key>sections</key>
+		<array>
+			<dict>
+				<key>sectionType</key>
+				<string>Visible</string>
+			</dict>
+		</array>
+		<key>isController</key>
+		<true/>
+		<key>overridePrincipalClass</key>
+		<true/>
 		<key>label</key>
-		<string>TSWoodPeckeriOSLoader</string>
+		<string>WoodPeckeriOSLoader</string>
+		<key>icon</key>
+		<string>Icon.png</string>
+		<key>useSearchBar</key>
+		<true/>
+		<key>showIdentifiersAsSubtitle</key>
+		<true/>
+		<key>hideSearchBarWhileScrolling</key>
+		<false/>
+		<key>defaultApplicationSwitchValue</key>
+		<false/>
 	</dict>
-	<key>items</key>
-	<array>
-		<dict>
-			<key>bundle</key>
-			<string>AppList</string>
-			<key>isController</key>
-			<string>1</string>
-			<key>cell</key>
-			<string>PSLinkCell</string>
-			<key>label</key>
-			<string>Enabled Applications</string>
-			<key>ALSettingsPath</key>
-			<string>/var/mobile/Library/Preferences/com.todayios-cydia.woodpecker.plist</string>
-			<key>ALSettingsKeyPrefix</key>
-			<string>TSWoodPeckeriOSLoaderEnabled-</string>
-			<key>ALSettingsDefaultValue</key>
-			<string></string>
-			<key>ALAllowsSelection</key>
-			<string>1</string>
-			<key>ALSectionDescriptors</key>
-			<array>
-				<dict>
-					<key>items</key>
-					<array/>
-					<key>footer-title</key>
-					<string>Select which applications to load TSWoodPeckeriOSLoader into.</string>
-				</dict>
-				<dict>
-					<key>title</key>
-					<string>User Applications</string>
-					<key>predicate</key>
-					<string>isSystemApplication = FALSE</string>
-					<key>icon-size</key>
-					<string>29</string>
-					<key>suppress-hidden-apps</key>
-					<string>1</string>
-					<key>cell-class-name</key>
-					<string>ALSwitchCell</string>
-				</dict>
-				<dict>
-					<key>title</key>
-					<string>System Applications</string>
-					<key>predicate</key>
-					<string>isSystemApplication = TRUE AND NOT (displayIdentifier IN {&apos;com.iptm.bigboss.sbsettings&apos;, &apos;com.booleanmagic.overboard&apos;, &apos;eu.heinelt.ifile&apos;})</string>
-					<key>icon-size</key>
-					<string>29</string>
-					<key>suppress-hidden-apps</key>
-					<string>1</string>
-					<key>cell-class-name</key>
-					<string>ALSwitchCell</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>This tweak is not officially supported. For more information about WoodPeckeriOS.app and runtime debugging see http://www.woodpeck.cn/cnusage</string>
-		</dict>
-	</array>
-	<key>title</key>
-	<string>TSWoodPeckeriOSLoader</string>
 </dict>
 </plist>
