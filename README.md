@@ -8,6 +8,7 @@ WoodPeckeriOS 可以在越狱设备上动态加载 WoodPeckeriOS.framework 到�
 
 将本项目 clone 到本地，修改 Makefile 中的设备 IP 和 PORT，然后执行 `make package install` 即可。
  release 版本使用 `make package FINALPACKAGE=1`
+ `make do -d`
 
 执行的前提是 
 1. thoes 本地的安装路径
