@@ -84,7 +84,8 @@
         
         //Twitter
         PSSpecifier *twitterSpec = [PSSpecifier preferenceSpecifierNamed:@"Twitter" target:self set:nil get:nil detail:nil cell:PSButtonCell edit:nil];
-        [twitterSpec setProperty:@"manajay_dlj" forKey:@"label"];
+        [twitterSpec setProperty:@"Twitter" forKey:@"label"];
+        [twitterSpec setButtonAction:@selector(twitter)];
         [twitterSpec setProperty:[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/WoodPeckerPrefs.bundle/Twitter.png"] forKey:@"iconImage"];
         [rootSpecifiers addObject:twitterSpec];
         
@@ -98,6 +99,10 @@
     }
     
     return _specifiers;
+}
+
+- (void)twitter {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/manajay_dlj"] options:@{} completionHandler:nil];
 }
 
 -(void)_reallyRespring{
