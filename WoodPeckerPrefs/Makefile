@@ -1,7 +1,7 @@
 ARCHS = arm64
 THEOS_DEVICE_IP = localhost -p 2222
 TARGET = iphone:clang:13.7 # 注意 theos 的 SDK 内是否有相应的版本
-include $(THEOS)/makefiles/common.mk
+include ${THEOS}/makefiles/common.mk
 
 BUNDLE_NAME = WoodPeckerPrefs
 $(BUNDLE_NAME)_FRAMEWORKS = UIKit

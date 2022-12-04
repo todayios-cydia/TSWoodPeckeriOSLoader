@@ -10,7 +10,7 @@ echo "===================================="
 DYLIB_SOURCE_PATH="./woodpecker-ios/WoodPeckeriOS.xcframework/ios-arm64_armv7/WoodPeckeriOS.framework"
 
 echo "Copying dylib..."
-DYLIB_PATH="./WoodPeckerPrefs/layout/Library/Application\ Support/TSWoodPeckeriOSLoader"
+DYLIB_PATH="./WoodPeckerPrefs/layout/Library/Application Support/TSWoodPeckeriOSLoader"
 if [ ! -d "$DYLIB_PATH" ]; then
 	mkdir -p ${DYLIB_PATH}
 fi

@@ -5,7 +5,7 @@
 
 ## 安装
 - 配置好本地的 thoes 环境 详情查看 [theos-installation-macos](https://theos.dev/docs/installation-macos)
-  - 注意配置好环境变量 ${THEOS} 以及 对应的 iPhone SDK 是否在 theos 的 SDK 文件夹中
+  - 注意配置好环境变量 `${THEOS}` 以及 对应的 iPhone SDK 是否在 theos 的 SDK 文件夹中
 - 将本项目 clone 到本地，修改 Makefile 中的设备 IP 和 PORT，然后执行 `make package install` 即可。
   - 如果想自动安装到手机
   - 配置好 ssh 
