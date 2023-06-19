@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>分组1</string>
+        </dict>
+        <dict>
+            <!-- cell类型：开关类型 -->
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <!-- 默认值：true -->
+            <key>default</key>
+            <true/>
+            <!-- userdefault关联的bundleId -->
+            <key>defaults</key>
+            <string>com.todayios-cydia.woodpecker</string>
+            <!-- 关联的userDefault的key -->
+            <key>key</key>
+            <string>woodpecker-preference-switch</string>
+            <!-- 显示的文本 -->
+            <key>label</key>
+            <string>插件开关</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <!-- 关联的事件，在BMRootListController定义 -->
+            <key>action</key>
+            <string>respringAction</string>
+            <!-- 按钮颜色 -->
+            <key>isDestructive</key>
+            <true/>
+            <!-- 按钮文本 -->
+            <key>label</key>
+            <string>respring</string>
+        </dict>
+    </array>
+    <!-- navigationbar标题 -->
+    <key>title</key>
+    <string>测试插件</string>
+</dict>
+</plist>

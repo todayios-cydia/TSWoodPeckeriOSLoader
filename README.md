@@ -10,8 +10,12 @@
   - 如果想自动安装到手机
   - 配置好 ssh 
   - USB 连接越狱设备: `iproxy 2222 22`
-  - 到 `make do`
+  - 到 `make do THEOS_PACKAGE_SCHEME=rootless`
   - 然后 生成 deb 文件, 就可以安装到 iOS 设备上
+
+## 解决 tweak 无根的问题
+- THEOS_PACKAGE_SCHEME=rootless
+- 所用的路径都增加 ROOT_PATH_NS  宏包裹一层
 
 ## 使用
 
